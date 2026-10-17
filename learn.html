@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Python | PyPath</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <button id="menuButton" class="menu-button" aria-label="Open chapter menu">☰</button>
+    <a class="main-page-button" href="index.html">← Main Page</a>
+    <div class="logo">Py</div>
+    <div class="brand">
+      <h1>PyPath</h1>
+      <p>Class 11 Computer Science</p>
+    </div>
+  </header>
+
+  <div class="learning-layout">
+    <aside id="sidebar" class="sidebar">
+      <p class="sidebar-heading">CLASS 11 PYTHON</p>
+      <button id="homeButton" class="home-link active">⌂ <span>Home</span></button>
+      <div id="chapterMenu"></div>
+    </aside>
+
+    <main class="main-content">
+      <section id="homePage" class="home-page">
+        <p class="eyebrow">WELCOME TO PyPath</p>
+        <h2>Class 11 Computer Science</h2>
+        <p class="intro-text">This website helps you learn Python step by step with easy explanations, examples, and coding practice designed for Class 11 students.</p>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon purple">▤</div>
+            <h3>Learn the basics</h3>
+            <p>Read clear notes arranged by chapter and topic.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon green">⌘</div>
+            <h3>Practise Python</h3>
+            <p>Write code, run it and learn from the output.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon yellow">✓</div>
+            <h3>Check your learning</h3>
+            <p>Answer quick questions after studying a chapter.</p>
+          </article>
+        </div>
+
+        <section class="how-card">
+          <h3>How to use this website</h3>
+          <ol>
+            <li>Choose a chapter from the left menu.</li>
+            <li>Click a topic to read its explanation and examples.</li>
+            <li>Try changing the code in the Python Practice Lab.</li>
+            <li>Answer the quick question to check your understanding.</li>
+          </ol>
+        </section>
+        <p class="syllabus-note">Use these notes alongside the textbook prescribed by your school.</p>
+      </section>
+
+      <section id="lessonPage" class="lesson-page hidden">
+        <button id="backHomeButton" class="back-link">← Home</button>
+        <p id="lessonLabel" class="eyebrow">CHAPTER 1</p>
+        <h2 id="lessonTitle"></h2>
+        <p id="lessonIntro" class="intro-text"></p>
+        <div id="lessonNotes"></div>
+
+        <section class="practice-card">
+          <h3>Python Practice Lab</h3>
+          <p>Change the code and click Run Python. An internet connection is needed to load the Python engine.</p>
+          <textarea id="codeEditor" spellcheck="false">print("Hello, Python!")
+print("I am learning Python.")</textarea>
+          <div class="practice-buttons">
+            <button id="runButton" class="run-button">▶ Run Python</button>
+            <button id="resetButton" class="reset-button">Reset example</button>
+          </div>
+          <p class="output-label">Output</p>
+          <pre id="codeOutput">Your result will appear here.</pre>
+        </section>
+
+        <section class="quiz-card">
+          <h3>Quick question</h3>
+          <p id="quizQuestion"></p>
+          <div id="quizChoices"></div>
+          <p id="quizFeedback" aria-live="polite"></p>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <footer>Python Pathway · Made for Class 11 learners</footer>
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.27.7/full/pyodide.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
